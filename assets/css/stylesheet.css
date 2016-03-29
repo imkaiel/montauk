@@ -25,6 +25,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.4px;
     line-height: 1.2;
 }
 
@@ -53,6 +54,9 @@ h6 {
 }
 
 p {
+    color: #212121;
+    font-size: 18px;
+    font-weight: 400;
     margin: auto auto 1.5rem;
 }
 
