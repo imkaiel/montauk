@@ -32,7 +32,7 @@ a, a:visited {
 }
 
 a:link, a:hover, a:active {
-    border-color: #ff0052;
+    border-color: #000;
     text-decoration: none;
     transition-property: all;
     transition-duration: 0.2s;
