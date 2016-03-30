@@ -24,6 +24,26 @@ body {
     line-height: 1.5;
 }
 
+a, a:visited {
+    color: #000;
+    text-decoration: none;
+    outline: 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+a:link, a:visited, a:hover, a:active {
+    border-color: #ff0052;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+    -moz-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+    -ms-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+    -o-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+    transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+    -webkit-font-smoothing: antialiased;
+}
+
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.4px;
     line-height: 1.2;
