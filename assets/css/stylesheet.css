@@ -24,14 +24,14 @@ body {
     line-height: 1.6;
 }
 
-a, a:visited {
+a, a:link, a:visited {
     color: #000;
     text-decoration: none;
     outline: 0;
     border-bottom: 2px solid #e0e0e0;
 }
 
-a:link, a:hover, a:active {
+a:hover, a:active {
     border-color: #000;
     text-decoration: none;
     transition-property: all;
@@ -84,10 +84,46 @@ p + p {
     margin-top: -1.5rem;
 }
 
-#container {
-    max-width: 42rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
+.container,
+.container-fluid {
     padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container::after,
+.container-fluid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
